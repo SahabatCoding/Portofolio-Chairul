@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    /*Color*/
+    --color-text : #252B41;
+    --color-primary : #C93742;
+    --color-bg : #F5F5F5;
+
+    /*Font*/
+    --font-poppins : "Urbanist", sans-serif;
+}
