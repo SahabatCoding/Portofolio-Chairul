@@ -20,10 +20,10 @@ export default function Navbar() {
                         onClick={()=>setMenuOpen(false)}
                     >
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#about">Home</a>
                         </li>
                         <li>
-                            <a href="#experience">Experience</a>
+                            <a href="#experience">Resume</a>
                         </li>
                         <li>
                             <a href="#projects">Projects</a>
