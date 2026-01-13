@@ -1,13 +1,11 @@
-.section {
+.container {
     display: grid;
     grid-template-columns: 300px 1fr 430px;
     grid-template-rows: 345px;
     grid-template-areas:
         "content content imageHero";
-
     margin: 7% 10%;
 }
-
 
 /*CSS Content*/
 .content {
@@ -93,7 +91,7 @@
 }
 
 @media screen and (max-width : 900px) {
-    .section {
+    .container {
         grid-template-columns: 1fr;
         grid-template-rows: 300px auto;
         grid-template-areas:
