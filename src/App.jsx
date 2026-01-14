@@ -1,8 +1,9 @@
 import style from "./App.module.css"
 import { BrowserRouter, Route, Routes } from "react-router";
-import Home from "./component/Home/Home";
-import Resume from "./component/Resume/Resume";
 import Layout from "./component/routes/Layout";
+import Hero from "./component/Hero/Hero";
+import Resume from "./component/Resume/Resume";
+import Course from "./component/Resume/Course/Course";
 
 export default function App(){
     return(
@@ -10,8 +11,10 @@ export default function App(){
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout/>} >
-                        <Route index element={<Home/>}/>
-                        <Route path="resume" element={<Resume/>}/>
+                        <Route index element={<Hero/>}/>
+                        <Route path="resume" element={<Resume/>} >
+                            <Route path="course" element={<Course/>} />
+                        </Route>
                     </Route>
                 </Routes>
             </BrowserRouter>

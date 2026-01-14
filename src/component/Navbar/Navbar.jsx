@@ -1,7 +1,7 @@
 import { useState } from "react"
 import style from "./Navbar.module.css"
 import { getImageUrl } from "../../utils"
-import { Link, Outlet, useLocation } from "react-router"
+import { Link, NavLink, Outlet, useLocation } from "react-router"
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -23,24 +23,24 @@ export default function Navbar() {
                         onClick={()=>setMenuOpen(false)}
                     >
                         <li>
-                            <Link 
-                                className={pathname === "/" ? style.listLink : ""} 
-                                to="/" >Home</Link>
+                            <NavLink
+                                className={({isActive})=> isActive ? style.listLink : ""} 
+                                to="/">Home</NavLink>
                         </li>
                         <li>
-                            <Link
-                                className={pathname === "/resume" ? style.listLink : ""} 
-                                to="/resume">Resume</Link>
+                            <NavLink
+                                className={({isActive})=> isActive ? style.listLink : ""} 
+                                to="/resume">Resume</NavLink>
                         </li>
                         <li>
-                            <Link
-                                className={pathname === "/project" ? style.listLink : ""} 
-                                to="/project" >Projects</Link>
+                            <NavLink
+                                className={({isActive})=> isActive ? style.listLink : ""} 
+                                to="/project">Project</NavLink>
                         </li>
                         <li>
-                            <Link  
-                                className={pathname === "/contact" ? style.listLink : ""} 
-                                to="/contact" >Contact</Link>
+                            <NavLink
+                                className={({isActive})=> isActive ? style.listLink : ""} 
+                                to="/contact">Contact</NavLink>
                         </li>
                     </ul>
                 </div>

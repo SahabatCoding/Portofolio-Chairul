@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router";
+import { NavLink, Outlet, useLocation } from "react-router";
 import style from "./Resume.module.css"
 
 export default function Resume() {
@@ -15,7 +15,7 @@ export default function Resume() {
                             <li>
                                 <NavLink
                                     to="/resume/course"
-                                    className={pathname === "/resume/course" ? style.listLink : ""} >Course</NavLink>
+                                    className={({isActive})=> isActive ? style.listLink : "" }>Course</NavLink>
                             </li>
                             <li>
                                 <NavLink
@@ -36,7 +36,7 @@ export default function Resume() {
                     </nav>
                 </section>
                 <article className={style.article} >
-                    <h1>List</h1>
+                    <Outlet/>
                 </article>
             </main>
 
