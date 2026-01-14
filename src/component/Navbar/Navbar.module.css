@@ -35,9 +35,9 @@
     font-size: 21px;
 }
 
-.menuItems a.active{
-    color: var(--color-primary);
-    text-decoration: underline;
+.menuItems .listLink {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 

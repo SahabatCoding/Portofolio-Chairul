@@ -1,33 +1,43 @@
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import style from "./Resume.module.css"
 
 export default function Resume() {
+    const { pathname } = useLocation()
+
     return (
         <>
             <main className={style.container}>
                 <section className={style.content}>
-                    <h1>Why Hire Me</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam laborum officia et hic totam vitae exercitationem magni. Eum dolore doloribus alias, tempore blanditiis, minus fugit harum nihil voluptate labore perspiciatis.</p>
+                    <h1>Why Hire Me?</h1>
+                    <p>I am a passionate fullstack developer.</p>
                     <nav>
                         <ul>
                             <li>
-                                <NavLink>Experience</NavLink>
+                                <NavLink
+                                    to="/resume/course"
+                                    className={pathname === "/resume/course" ? style.listLink : ""} >Course</NavLink>
                             </li>
                             <li>
-                                <NavLink>Education</NavLink>
+                                <NavLink
+                                    to=""
+                                    className={pathname === "/resume/experience" ? style.listLink : ""} >Education</NavLink>
                             </li>
                             <li>
-                                <NavLink>Skills</NavLink>
+                                <NavLink
+                                    to=""
+                                    className={pathname === "/resume/experience" ? style.listLink : ""} >Skills</NavLink>
                             </li>
                             <li>
-                                <NavLink>About Me</NavLink>
+                                <NavLink
+                                    to=""
+                                    className={pathname === "/resume/experience" ? style.listLink : ""} >About Me</NavLink>
                             </li>
                         </ul>
                     </nav>
-                    <article>
-                        <h1>List</h1>
-                    </article>
                 </section>
+                <article className={style.article} >
+                    <h1>List</h1>
+                </article>
             </main>
 
         </>

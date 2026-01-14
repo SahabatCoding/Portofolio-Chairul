@@ -1,14 +1,16 @@
 import { useState } from "react"
 import style from "./Navbar.module.css"
 import { getImageUrl } from "../../utils"
-import { NavLink, Outlet } from "react-router"
+import { Link, Outlet, useLocation } from "react-router"
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
+    const {pathname} = useLocation()
+    console.log(pathname)
     return (
         <>
             <nav className={style.navbar}>
-                <NavLink className={style.title} >PORTOFOLIO</NavLink> 
+                <Link className={style.title} >PORTOFOLIO</Link> 
                 <div className={style.menu} >
                     <img
                         className={style.menuBtn}
@@ -21,22 +23,28 @@ export default function Navbar() {
                         onClick={()=>setMenuOpen(false)}
                     >
                         <li>
-                            <NavLink  to="/" >Home</NavLink>
+                            <Link 
+                                className={pathname === "/" ? style.listLink : ""} 
+                                to="/" >Home</Link>
                         </li>
                         <li>
-                            <NavLink to="/resume">Resume</NavLink>
+                            <Link
+                                className={pathname === "/resume" ? style.listLink : ""} 
+                                to="/resume">Resume</Link>
                         </li>
                         <li>
-                            <NavLink to="/project" >Projects</NavLink>
+                            <Link
+                                className={pathname === "/project" ? style.listLink : ""} 
+                                to="/project" >Projects</Link>
                         </li>
                         <li>
-                            <NavLink to="/contact" >Contact</NavLink>
+                            <Link  
+                                className={pathname === "/contact" ? style.listLink : ""} 
+                                to="/contact" >Contact</Link>
                         </li>
                     </ul>
                 </div>
             </nav>
-
-            <Outlet/>
         </>
     )
 }

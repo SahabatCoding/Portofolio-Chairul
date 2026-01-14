@@ -4,6 +4,7 @@
     --color-text : #252B41;
     --color-primary : #C93742;
     --color-bg : #F5F5F5;
+    --red-soft: rgba(255, 0, 0, 0.6);
 
     /*Font*/
     --font-poppins : "Urbanist", sans-serif;
