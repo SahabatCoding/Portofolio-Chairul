@@ -1,0 +1,38 @@
+[
+    {
+        "start": "June 2025 ",
+        "end" : "August 2025",
+        "role": "ReactJs",
+        "field": "Software Engineering",
+        "organization": "Udemy",
+        "type": "Training Program",
+        "link" : "https://www.udemy.com/certificate/UC-787509ed-5b06-4cb5-bbdd-ca9e4cd7b5d6/"
+    },
+    {
+        "start": "October 2024",
+        "end" : "December 2024",
+        "role": "MySQL Fundamentals",
+        "field": "Database MySQL",
+        "organization": "Udemy",
+        "type": "Training Program",
+        "link" : "https://www.udemy.com/certificate/UC-5e6cd8e2-ae17-4c58-b1e3-f1fbf3588bce/"
+    },
+    {
+        "start": "April 2024",
+        "end" : "June 2024",
+        "role": "HTML, CSS & JavaScript",
+        "field": "Software Engineering",
+        "organization": "Udemy",
+        "type": "Training Program",
+        "link" : "https://www.udemy.com/certificate/UC-45dae154-2c05-4b44-ac06-e5288d3b05e1/"
+    },
+    {
+        "start": "August 2023",
+        "end" : "December 2023",
+        "role": "Data & Software Engineering",
+        "field": "Software Engineering",
+        "organization": "RevoU Tech Academy",
+        "type": "Training Program",
+        "link" : "https://certificates.revou.co/chairul-yusuf-certificate-completion-kmb4.pdf"
+    }
+]
