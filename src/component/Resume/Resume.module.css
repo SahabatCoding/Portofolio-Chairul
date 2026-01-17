@@ -1,5 +1,5 @@
 .container {
-    margin: 7% 10%;
+    margin: 6% 10%;
     display: grid;
     grid-template-columns: 0.4fr 1fr;
     grid-template-rows: 1fr;
@@ -55,9 +55,22 @@
 }
 
 .article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     grid-area: article;
     margin-left: 5%;
+    box-shadow: 2px 7px 3px rgba(0, 0, 0, 0.2);
 }
+
+.article h1{
+    font-size: 31px;
+}
+
+.article p{
+    font-size: 15px;
+}
+
 
 .content nav ul li:hover{
     background-color: var(--color-bg);

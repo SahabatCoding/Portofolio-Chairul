@@ -1,0 +1,16 @@
+[
+    {
+        "degree" : "Bachelors Degree in Informatics Engineering",
+        "startDate" : "2020",
+        "endDate" : "2024",
+        "university" : "Pamulang University",
+        "gpa" : "3.50"
+    },
+    {
+        "degree" : "High School Diploma",
+        "startDate" : "2017",
+        "endDate" : "2020",
+        "university" : "SMA Negeri 12 Kota Tangerang Selatan",
+        "gpa" : "82"
+    }
+]

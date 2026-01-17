@@ -2,6 +2,8 @@ import style from "./Resume.module.css"
 import { useState } from "react";
 import Course from "./Course/Course";
 import Education from "./Education/Education";
+import Skills from "./Skills/Skills";
+import About from "./About/About";
 
 export default function Resume() {
     const [activeTab, setActiveTab] = useState("course")
@@ -21,19 +23,19 @@ export default function Resume() {
                                 className={activeTab === "education" ? style.listLink :""}
                                 onClick={()=> setActiveTab("education")}>Education</li>
                             <li
-                                className={activeTab === "project" ? style.listLink :""}
-                                onClick={()=> setActiveTab("project")}>Project</li>
+                                className={activeTab === "skills" ? style.listLink :""}
+                                onClick={()=> setActiveTab("skills")}>Skills</li>
                             <li
-                                className={activeTab === "contact" ? style.listLink :""}
-                                onClick={()=> setActiveTab("contact")}>Contact</li>
+                                className={activeTab === "about me" ? style.listLink :""}
+                                onClick={()=> setActiveTab("about me")}>About Me</li>
                         </ul>
                     </nav>
                 </section>
                 <article className={style.article} >
                     {activeTab === "course" && <Course/>}
                     {activeTab === "education" && <Education/>}
-                    {activeTab === "project" && ""}
-                    {activeTab === "contact" && ""}
+                    {activeTab === "skills" && <Skills/>}
+                    {activeTab === "about me" && <About/>}
                 </article>
             </main>
 

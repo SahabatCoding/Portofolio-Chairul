@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "Name",
+        "description" : "Chairul Yusuf"
+    },
+    {
+        "name" : "Phone",
+        "description" : "(+62) 89678767443"
+    },
+    {
+        "name" : "Experience",
+        "description" : "Fresh Graduate"
+    },
+    {
+        "name" : "Nationality",
+        "description" : "Indonesia"
+    },
+    {
+        "name" : "Email",
+        "description" : "chairulyusuf29@gmail.com"
+    },
+    {
+        "name" : "Languages",
+        "description" : "English, Indonesia"
+    }
+]

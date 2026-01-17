@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "css",
+        "img" : "skills/css.png"
+    },
+    {
+        "name" : "figma",
+        "img" : "skills/figma.png"
+    },
+    {
+        "name" : "html",
+        "img" : "skills/html.png"
+    },
+    {
+        "name" : "javascript",
+        "img" : "skills/javascript.png"
+    },
+    {
+        "name" : "mysql",
+        "img" : "skills/mysql.png"
+    },
+    {
+        "name" : "react",
+        "img" : "skills/react.png"
+    }
+]
