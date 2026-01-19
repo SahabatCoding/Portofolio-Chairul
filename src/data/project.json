@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Fullstack Project",
+        "description": "Web contact management",
+        "image": "project/capture.JPG",
+        "skills": ["JavaScript", "Node.js", "Express", "MySQL", "React"],
+        "github": "https://github.com/SahabatCoding/frontend-contact-management",
+        "demo": "https://contact-management-ochre.vercel.app/login"
+    }
+]
