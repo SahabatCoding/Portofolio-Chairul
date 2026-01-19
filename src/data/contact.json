@@ -1,0 +1,17 @@
+[
+    {
+        "image" : "contact/phone.png",
+        "name" : "Phone",
+        "description" : "+62 896 7876 7443"
+    },
+    {
+        "image" : "contact/email.png",
+        "name" : "Email",
+        "description" : "chairulyusuf29@gmail.com"
+    },
+    {
+        "image" : "contact/pin.png",
+        "name" : "Location",
+        "description" : "Bandung, Indonesia"
+    }
+]

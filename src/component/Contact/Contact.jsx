@@ -1,4 +1,7 @@
 import { useState } from "react";
+import style from "./Contact.module.css"
+import contact from "../../data/contact.json"
+import { getImageUrl } from "../../utils";
 
 export default function Contact() {
     const [fisrtName, setFirstName] = useState("");
@@ -6,12 +9,9 @@ export default function Contact() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const [status, setStatus] = useState("")
 
     async function handleSubmit(e) {
         e.preventDefault();
-
-        setStatus("Sending...")
 
         const response = await fetch("/api/contact", {
             method: "POST",
@@ -26,25 +26,45 @@ export default function Contact() {
         })
 
         if (response.ok) {
-            setStatus("Message sent successfully!")
+            alert("Message sent successfully!")
             setEmail("")
             setLastName("")
             setFirstName("")
             setMessage("")
-        }else{
+        } else {
             setStatus("Failed to send message.")
         }
 
     }
     return (
         <>
-            <form >
-                <input type="text" placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} />
-                <input type="text" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} />
-                <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-                <textarea placeholder="Your Message" onChange={(e) => setMessage(e.target.value)} ></textarea>
-                <button type="submit" onClick={handleSubmit} >Send Message</button>
-            </form>
+            <main className={style.container} >
+                <form className={style.formContact}>
+                    <h1>Lets Work Together</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio adipisci laborum repellat vel quaerat hic fuga.</p>
+                    <input type="text" required value={fisrtName} placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} />
+                    <input type="text" value={lastName} placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} />
+                    <input type="email" required value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+                    <textarea required placeholder="Your Message" onChange={(e) => setMessage(e.target.value)} ></textarea>
+                    <button type="submit" onClick={handleSubmit} >Send</button>
+                </form>
+                <nav className={style.listLink} >
+                    <ul>
+                        {contact.map((data, index) => (
+                            <li key={index}>
+                                <div className={style.image}>
+                                    <img src={getImageUrl(data.image)} alt={data.name} />
+                                </div>
+                                <div className={style.description}>
+                                    <h4>{data.name}</h4>
+                                    <span>{data.description}</span>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </main>
+
         </>
     )
 }

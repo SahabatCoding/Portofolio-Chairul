@@ -1,0 +1,85 @@
+.container {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "formContact listLink";
+    align-items: center;
+    margin: 2% 17%;
+    gap: 30px;
+}
+
+.formContact {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin: 2%;
+    grid-area: formContact;
+    padding: 20px;
+    box-shadow: -5px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+.formContact input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.formContact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.formContact button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #c93742;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.listLink {
+    grid-area: listLink;
+}
+
+.listLink li {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 55px;
+    grid-template-areas:
+        "image description";
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.listLink .image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+
+}
+
+.listLink img {
+    width: 32px;
+    height: 32px;
+}
+
+.listLink .description {
+    grid-area: description;
+}
+
+@media screen and (max-width : 900px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 1fr;
+        grid-template-areas:
+            "formContact"
+            "listLink";
+        margin: 5% 4%;
+        }
+
+}
