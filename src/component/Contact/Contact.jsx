@@ -32,7 +32,7 @@ export default function Contact() {
             setFirstName("")
             setMessage("")
         } else {
-            setStatus("Failed to send message.")
+            alert("Failed to send message. Please try again later.")
         }
 
     }
