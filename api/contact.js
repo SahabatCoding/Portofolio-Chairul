@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer'
 
-export default handler = (req, res) => {
+export default function handler(req, res) {
 
     console.log(req);
     if (req.method !== 'POST') {
