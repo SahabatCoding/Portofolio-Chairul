@@ -4,6 +4,7 @@ import Layout from "./component/Routes/Layout";
 import Hero from "./component/Hero/Hero";
 import Resume from "./component/Resume/Resume";
 import Project from "./component/Project/Project";
+import Contact from "./component/Contact/Contact";
 
 export default function App(){
     return(
@@ -14,6 +15,7 @@ export default function App(){
                         <Route index element={<Hero/>}/>
                         <Route path="resume" element={<Resume/>}/>
                         <Route path="project" element={<Project/>}/>
+                        <Route path="contact" element={<Contact/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>
