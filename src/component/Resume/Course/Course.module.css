@@ -34,3 +34,9 @@
 .card ul li:hover{
     box-shadow: -5px 7px 3px rgba(201, 55, 66, 0.8);
 }
+
+@media screen and (max-width : 480px) {
+    .card ul li{
+        height: 130px;
+    }
+}
