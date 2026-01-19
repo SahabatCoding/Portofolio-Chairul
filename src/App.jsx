@@ -1,6 +1,6 @@
 import style from "./App.module.css"
 import { BrowserRouter, Route, Routes } from "react-router";
-import Layout from "./component/routes/Layout";
+import Layout from "./component/Routes/Layout";
 import Hero from "./component/Hero/Hero";
 import Resume from "./component/Resume/Resume";
 import Project from "./component/Project/Project";
