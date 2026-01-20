@@ -1,14 +1,13 @@
-.card ul{
+.card ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     padding: 20px;
-    height: 250px;
     list-style: none;
 }
 
-.card li{
+.card li {
     display: flex;
     align-items: center;
     max-width: 300px;
@@ -20,15 +19,21 @@
     box-shadow: -5px 7px 3px rgba(0, 0, 0, 0.2);
 }
 
-.card h4{
+.card h4 {
     display: inline-block;
 }
 
-.card p{
+.card p {
     display: inline-block;
     margin-left: 1%;
 }
 
-.card li:hover{
+.card li:hover {
     box-shadow: -5px 7px 3px rgba(201, 55, 66, 0.8);
+}
+
+@media screen and (max-width : 800px) {
+    .card ul {
+        height: 300px;
+    }
 }

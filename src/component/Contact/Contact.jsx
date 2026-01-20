@@ -41,7 +41,7 @@ export default function Contact() {
             <main className={style.container} >
                 <form className={style.formContact}>
                     <h1>Lets Work Together</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio adipisci laborum repellat vel quaerat hic fuga.</p>
+                    <p>Interested in working together or have any questions? Send a message through the form below and I’ll get back to you as soon as possible.</p>
                     <input type="text" required value={fisrtName} placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} />
                     <input type="text" value={lastName} placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} />
                     <input type="email" required value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
