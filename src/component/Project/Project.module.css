@@ -5,7 +5,7 @@
 .cardProject li {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 300px;
     grid-template-areas:
         "title imgProject";
     list-style: none;
@@ -65,7 +65,6 @@
 
 .links img {
     width: 30px;
-    filter: invert(28%) sepia(70%) saturate(2038%) hue-rotate(332deg) brightness(84%) contrast(87%);
     transition: transform 0.2s ease;
 }
 

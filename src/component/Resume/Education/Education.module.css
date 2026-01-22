@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     gap: 50px;
-    margin: 3% 0%;
     height: 250px;
     padding: 30px;
     overflow-y: auto;

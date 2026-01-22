@@ -27,7 +27,3 @@
 .card li:hover {
     box-shadow: -5px 7px 3px rgba(201, 55, 66, 0.8);
 }
-
-.card li:hover img {
-    filter: invert(28%) sepia(70%) saturate(2038%) hue-rotate(332deg) brightness(84%) contrast(87%);
-}

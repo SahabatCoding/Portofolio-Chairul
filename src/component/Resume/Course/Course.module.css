@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
-    margin: 3% 0%;
     flex-wrap: wrap;
     height: 250px;
     padding: 30px;
