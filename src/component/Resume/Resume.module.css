@@ -85,7 +85,7 @@
 @media screen and (max-width : 900px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 350px 1fr;
+        grid-template-rows: 380px 1fr;
         grid-template-areas:
             "content"
             "article";
