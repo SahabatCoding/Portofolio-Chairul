@@ -15,7 +15,7 @@ export default function Hero() {
                             <NavLink to="https://github.com/SahabatCoding" >
                                 <img src={getImageUrl("hero/github.png")} alt="github" />
                             </NavLink>
-                            <NavLink>
+                            <NavLink to="https://www.instagram.com/chairulyf/">
                                 <img src={getImageUrl("hero/instagram.png")} alt="instagram" />
                             </NavLink>
                             <NavLink to="https://www.linkedin.com/in/chairulyusuf/" >
